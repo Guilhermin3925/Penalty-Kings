@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="26dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Preparando o estadio" android:textColor="@color/texto"
+            android:textSize="26sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Estes recursos melhoram o jogo. Nada aqui e obrigatorio."
+            android:textColor="@color/textoFraco" android:textSize="13sp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnPermissoes"
+            android:layout_width="match_parent" android:layout_height="54dp"
+            android:text="Liberar permissoes" android:textColor="#04120A"
+            android:background="@drawable/bg_button" android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnModoPro"
+            android:layout_width="match_parent" android:layout_height="54dp"
+            android:text="Ativar Modo Pro (assistencia de chute)"
+            android:textColor="@color/texto" android:background="@drawable/bg_input"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnRanking"
+            android:layout_width="match_parent" android:layout_height="54dp"
+            android:text="Ativar Ranking ao vivo"
+            android:textColor="@color/texto" android:background="@drawable/bg_input"
+            android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnJogar"
+            android:layout_width="match_parent" android:layout_height="58dp"
+            android:text="JOGAR" android:textStyle="bold" android:textColor="#04120A"
+            android:background="@drawable/bg_button"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+
+            <ImageView android:id="@+id/miniAvatar"
+                android:layout_width="52dp" android:layout_height="52dp"
+                android:background="@drawable/bg_avatar" android:scaleType="centerCrop"/>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView android:id="@+id/ola" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Ola, craque"
+                    android:textColor="@color/texto" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/sub" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Rodada 1 • 0 gols"
+                    android:textColor="@color/textoFraco" android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Escolha seu clube" android:textColor="@color/accent"
+            android:textSize="14sp" android:textStyle="bold"
+            android:layout_marginTop="24dp" android:layout_marginBottom="10dp"/>
+
+        <HorizontalScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:scrollbars="none">
+            <LinearLayout android:id="@+id/listaTimes"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Escolha o cobrador" android:textColor="@color/accent"
+            android:textSize="14sp" android:textStyle="bold"
+            android:layout_marginTop="20dp" android:layout_marginBottom="10dp"/>
+
+        <LinearLayout android:id="@+id/listaCraques"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <Button android:id="@+id/jogar"
+            android:layout_width="match_parent" android:layout_height="60dp"
+            android:text="BATER O PENALTI" android:textStyle="bold"
+            android:textColor="#04120A" android:background="@drawable/bg_button"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

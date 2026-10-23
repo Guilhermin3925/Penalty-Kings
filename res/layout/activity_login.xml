@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_horizontal"
+        android:padding="30dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="PENALTY" android:textColor="@color/accent"
+            android:textSize="40sp" android:textStyle="bold" android:letterSpacing="0.15"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="LEGENDS" android:textColor="@color/texto"
+            android:textSize="40sp" android:textStyle="bold" android:letterSpacing="0.15"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Copa mundial de penaltis • 16 clubes • 48 craques"
+            android:textColor="@color/textoFraco" android:textSize="12sp"
+            android:layout_marginTop="6dp" android:layout_marginBottom="26dp"/>
+
+        <ImageView android:id="@+id/avatar"
+            android:layout_width="110dp" android:layout_height="110dp"
+            android:background="@drawable/bg_avatar"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_myplaces"/>
+
+        <TextView android:id="@+id/dicaFoto"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="toque para escolher sua foto de perfil"
+            android:textColor="@color/accent" android:textSize="12sp"
+            android:layout_marginTop="10dp" android:layout_marginBottom="24dp"/>
+
+        <EditText android:id="@+id/email"
+            android:layout_width="match_parent" android:layout_height="54dp"
+            android:background="@drawable/bg_input" android:paddingStart="16dp"
+            android:hint="seu e-mail" android:textColorHint="@color/textoFraco"
+            android:textColor="@color/texto" android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/senha"
+            android:layout_width="match_parent" android:layout_height="54dp"
+            android:background="@drawable/bg_input" android:paddingStart="16dp"
+            android:hint="sua senha" android:textColorHint="@color/textoFraco"
+            android:textColor="@color/texto" android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+
+        <Button android:id="@+id/entrar"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="ENTRAR" android:textStyle="bold"
+            android:textColor="#04120A" android:background="@drawable/bg_button"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Conta obrigatoria para salvar progresso e ranking"
+            android:textColor="@color/textoFraco" android:textSize="11sp"/>
+    </LinearLayout>
+</ScrollView>
